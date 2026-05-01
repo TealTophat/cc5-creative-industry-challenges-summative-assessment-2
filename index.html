@@ -168,20 +168,25 @@
             <form action="https://formsubmit.co/marcopolodeocampo@gmail.com" method="POST">
                 <!--Captcha Disable-->
                 <input type="hidden" name="_captcha" value="false">
-                <!--Automatically proceed to thank-you page-->
-                <input type="hidden" name="_next" value="thankyou.html">
                 <!--Return to Github page-->
                 <input type="hidden" name="_next" value="https://tealtophat.github.io/cc5-creative-industry-challenges-summative-assessment-2/#contact">
                 <input type="text" name="Username" placeholder="Your Name" required>
                 <input type="email" name="E-mail" placeholder="Your Email" required>
-                <textarea rows="5" name="User Message" placeholder="Your Message" required></textarea>
-                <button type="submit">Submit</button>
+                <textarea rows="5" name="User&nbsp;Message" placeholder="Your Message" required></textarea>
+                <button type="submit" onclick="formSubmitted()">Submit</button>
             </form>
         </div>
 
     </div>
 </section>
 
+<!--formSubmitted code triggers when user submits the form-->
+<script>
+    function formSubmitted(){
+        alert("Thank You!\nYour message has been sent.")
+    }
+</script>
+<!--Google DialogFlow chatbot-->
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
       chat-icon="PUT IMAGE HERE (logo for chatbot or something)" 
