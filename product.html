@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barracuda Fishing Equipment</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="barracuda.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+<nav>
+    <a href="index.html"><div class="logo">
+        Barracuda
+        <span>Fishing Equipment</span>
+    </div></a>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+    </ul>
+</nav>
+
+<div class="product-container">
+
+    <div class="product-image">
+        <img id="product-image">
+    </div>
+
+    <div class="product-details">
+        <h1 id="product-name"></h1>
+        <p class="product-price" id="product-price"></p>
+        <p class="product-description" id="product-description"></p>
+    </div>
+
+</div>
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="PUT IMAGE HERE (logo for chatbot or something)" 
+      intent="WELCOME"
+      chat-title="F.I.N.N"
+      agent-id="f775b3e7-f2d7-41c7-b8b2-46bf8db4754b"
+      language-code="en"
+    ></df-messenger>
+
+<script src="product.js"></script>
+</body>
+</html>
