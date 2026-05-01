@@ -162,12 +162,14 @@
         <div class="contact-form">
             <!--Honeypot-->
             <input type="text" name="_honey" style="display:none;">
-            <!--Captcha Disable-->
-            <input type="hidden" name="_captcha" value="false">
 
             <h3>Need more info? Send us a message!</h3>
 
             <form action="https://formsubmit.co/marcopolodeocampo@gmail.com" method="POST">
+                <!--Captcha Disable-->
+                <input type="hidden" name="_captcha" value="false">
+                <!--Automatically proceed to thank-you page-->
+                <input type="hidden" name="_next" value="thankyou.html">
                 <input type="text" name="Username" placeholder="Your Name" required>
                 <input type="email" name="E-mail" placeholder="Your Email" required>
                 <textarea rows="5" name="User Message" placeholder="Your Message" required></textarea>
