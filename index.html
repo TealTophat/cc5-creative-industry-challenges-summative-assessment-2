@@ -160,12 +160,17 @@
 
         <!-- FORM -->
         <div class="contact-form">
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display:none;">
+            <!--Captcha Disable-->
+            <input type="hidden" name="_captcha" value="false">
+
             <h3>Need more info? Send us a message!</h3>
 
             <form action="https://formsubmit.co/marcopolodeocampo@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+                <input type="text" name="Username" placeholder="Your Name" required>
+                <input type="email" name="E-mail" placeholder="Your Email" required>
+                <textarea rows="5" name="User Message" placeholder="Your Message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
