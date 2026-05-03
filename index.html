@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Barracuda Fishing Equipment</title>
+<meta name="description" content="Premium fishing equipment in Abu Dhabi. Rods, reels, hooks, and more at Barracuda Fishing Equipment.">
+<meta name="keywords" content="fishing gear Abu Dhabi, fishing rods UAE, reels, fishing shop Abu Dhabi">
+<meta name="author" content="Barracuda Fishing Equipment">
+<title>Fishing Equipment in Abu Dhabi | Barracuda Fishing Gear</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,34 +105,48 @@
 
         <!-- FORM -->
         <div class="contact-form">
-            <!--Honeypot-->
-            <input type="text" name="_honey" style="display:none;">
-
             <h3>Need more info? Send us a message!</h3>
 
-            <form action="https://formsubmit.co/marcopolodeocampo@gmail.com" method="POST" target="_blank">
-                <!--Captcha Disable-->
-                <input type="hidden" name="_captcha" value="false">
-                <!--Return to Github page-->
-                <input type="hidden" name="_next" value="https://tealtophat.github.io/cc5-creative-industry-challenges-summative-assessment-2/#contact">
-                <input type="text" name="Username" placeholder="Your Name" required>
-                <input type="email" name="E-mail" placeholder="Your Email" required>
-                <textarea rows="5" name="User&nbsp;Message" placeholder="Your Message" required></textarea>
-                <button type="submit" onclick="formSubmitted()">Submit</button>
+            <form id="contactForm">
+                <input type="text" name="company" style="display:none">
+                <input type="text" name= "name" placeholder="Your Name" required>
+                <input type="email" name= "email" placeholder="Your Email" required>
+                <textarea rows="5" name= "message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+                <p id="form-status"></p>
             </form>
         </div>
 
     </div>
 </section>
 
-<!--product.js import-->
-<script src="product.js"></script>
-<!--formSubmitted code triggers when user submits the form-->
-<script>
-    function formSubmitted(){
-        alert("Thank You!\nYour message has been sent.")
-    }
+<!--EmailJS import-->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="email.js"></script>
+
+<!--SEO-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportingGoodsStore",
+  "name": "Barracuda Fishing Equipment",
+  "telephone": "+971544781809",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hamdan Street, Behind Al Salama Hospital",
+    "addressRegion": "Abu Dhabi",
+    "addressLocality": "Abu Dhabi",
+    "addressCountry": "AE"
+  },
+  "openingHours": "Mo-Su 09:00-24:00",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 24.490,
+    "longitude": 54.370
+  }
+}
 </script>
+
 <!--Google DialogFlow chatbot-->
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
@@ -140,6 +157,8 @@
       language-code="en"
     ></df-messenger>
 
+<!--product.js import-->
+<script type="module" src="product.js"></script>
 </body>
 
 
